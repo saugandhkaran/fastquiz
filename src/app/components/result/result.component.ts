@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResultServiceService } from '../../services/result-service/result-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-result',
@@ -9,7 +10,8 @@ import { ResultServiceService } from '../../services/result-service/result-servi
 export class ResultComponent implements OnInit {
 
   constructor(
-    private resultService: ResultServiceService
+    private resultService: ResultServiceService,
+    private router: Router
   ) { }
 
   message = '';
@@ -61,5 +63,9 @@ export class ResultComponent implements OnInit {
         this.message = 'Excellent! You are a genius!!';
         break;
     }
+  }
+
+  goBackToMainPage() {
+    this.router.navigateByUrl('/login');
   }
 }
