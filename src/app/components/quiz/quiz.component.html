@@ -1,0 +1,18 @@
+<app-header></app-header>
+<!-- <div [ngClass]="{'timer': showTimer, 'none': !showTimer}"></div> -->
+<div class="content">
+  <h3>Question {{counter + 1}}</h3>
+  <div class="questions-options">
+    <div class="questions">
+      <h2 [innerHtml]="questions[counter].question"></h2>
+      <div class="options-container" *ngIf="questions">
+          <div *ngFor="let option of questions[counter].options" class="options">
+              <button class="btn-primary option" (click)="nextQuestion(option)" [innerHtml]="option"></button>
+            </div>
+      </div>
+    
+  </div>
+</div>
+
+
+<app-loader *ngIf="!areQuestionsLoaded"></app-loader>

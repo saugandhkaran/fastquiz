@@ -1,0 +1,32 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-card {
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.75);
+    width: 150px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+    background-color:#990556;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    .category-footer {
+        color: white;
+    }
+
+    img {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+}

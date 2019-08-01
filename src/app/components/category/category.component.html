@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="content">
+<h3>Categories</h3>
+
+<div class="categories" >
+  <div class="category-card" *ngFor="let category of categories" (click)="moveToQuiz(category.category)">
+    <img [src]="category.img" />
+    <div class="category-footer">
+      {{category.label}}
+    </div>
+  </div>
+</div>
+</div>

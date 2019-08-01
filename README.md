@@ -1,1 +1,2 @@
-# fastquiz
+# FastQuiz
+

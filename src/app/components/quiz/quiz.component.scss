@@ -1,0 +1,31 @@
+.content {
+    height: 90vh;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.options {
+   margin-top: 10px;
+}
+
+.options-container {
+    margin-top: 20vh;
+}
+
+.timer {
+    background-image: linear-gradient(to right, #3ef512, #a6cd00, #d89f00, #f36700, #f9021f);
+    height: 6px;
+    animation: timelimit 10s;
+    animation-timing-function: linear;
+    
+}
+
+@-webkit-keyframes timelimit {
+    from {width: 0%}
+    to {width: 100%}
+}
+
+@keyframes timelimit {
+    from {width: 0%}
+    to {width: 100%}
+}

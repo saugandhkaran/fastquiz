@@ -1,0 +1,21 @@
+.content {
+    background-image: linear-gradient(to right, #c9861c, #cb6528, #c34438, #b32448, #990556);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h3 {
+    margin: 0;
+}
+input {
+    text-align: center;
+}
+
+.branding {
+    font-size: 3em;
+    padding-bottom: 60px;
+}
