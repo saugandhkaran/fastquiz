@@ -49,7 +49,7 @@ export class ResultComponent implements OnInit {
         this.message = 'You can do a lot better. Why not try again?';
         break;
       case 2:
-        this.message = 'Practise makes a man/woman perfect';
+        this.message = 'Practice makes a man/woman perfect';
         break;
       case 3:
         this.message = 'Average! But you have a lot more potential!!';
